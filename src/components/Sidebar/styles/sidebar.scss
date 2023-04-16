@@ -1,5 +1,32 @@
-.Sidebar{
-    height: 100vh;
-    background-color: red;
-    flex: .30;
+$base-color: #212d34;
+$white: #ffffff;
+$black: #000000;
+
+@mixin show_icon_button_ewhite_ffect {
+  color: $white;
+}
+
+.Sidebar {
+  height: 100vh;
+  flex: 0.3;
+
+  .MuiButtonBase-root {
+    @include show_icon_button_ewhite_ffect();
+  }
+
+  .Header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: $base-color;
+
+    div {
+      display: flex;
+      justify-content: space-around;
+
+      .MuiButtonBase-root {
+        @include show_icon_button_ewhite_ffect();
+      }
+    }
+  }
 }

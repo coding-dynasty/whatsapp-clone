@@ -1,11 +1,12 @@
 import Header from '../Header/Header';
+import Search from './Search';
 import './styles/sidebar.scss';
 
 const Sidebar = () => {
   return (
     <div className='Sidebar'>
-      {/* <Header /> */}
-      <h1>Hello world</h1>
+      <Header />
+      <Search />
     </div>
   );
 };
