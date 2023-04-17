@@ -21,11 +21,12 @@ $black: #000000;
   }
 
   .MuiAvatar-root {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
   }
 
   .Chat__info {
     margin-right: 0.5rem;
+    flex: 1;
 
     h1 {
       font-size: large;

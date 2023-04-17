@@ -1,0 +1,39 @@
+.Input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #202c33;
+  padding: 0.2rem 1rem;
+
+  .Input__Icons {
+    .MuiButtonBase-root {
+      color: #fff;
+    }
+  }
+
+  .Input__container {
+    flex: 1;
+    margin: 0.5rem;
+    background-color: #2a3942;
+    border-radius: 999px;
+    padding: 0 0.5rem;
+
+    input {
+      width: 100%;
+      padding: 1rem;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      font-size: large;
+      color: #fff;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+
+  .MuiButtonBase-root {
+    color: #fff;
+  }
+}

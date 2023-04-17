@@ -1,0 +1,42 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #212d34;
+  color: #ffffff;
+
+  .MuiButtonBase-root {
+    color: #ffffff;
+  }
+
+  .MuiAvatar-root {
+    margin-right: 0.5rem;
+  }
+
+  .Chat__info {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+
+    h1 {
+      font-size: large;
+      margin-bottom: 0.3rem;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .Chat__details {
+    display: flex;
+
+    .MuiSvgIcon-root {
+      color: #ffffff;
+    }
+    .MuiButtonBase-root {
+      color: #ffffff;
+    }
+  }
+}
