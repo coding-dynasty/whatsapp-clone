@@ -1,10 +1,12 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App{
-    display: flex;
-    
+.App {
+  display: flex;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu,
+    Cantarell, Fira Sans, sans-serif;
+  overflow: hidden;
 }

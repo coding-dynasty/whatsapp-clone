@@ -10,23 +10,12 @@ $black: #000000;
   height: 100vh;
   flex: 0.3;
 
-  .MuiButtonBase-root {
-    @include show_icon_button_ewhite_ffect();
+  .Sidebar__chats {
+    height: 86vh;
+    overflow-y: scroll;
   }
 
-  .Header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem;
-    background-color: $base-color;
-
-    div {
-      display: flex;
-      justify-content: space-around;
-
-      .MuiButtonBase-root {
-        @include show_icon_button_ewhite_ffect();
-      }
-    }
+  .MuiButtonBase-root {
+    @include show_icon_button_ewhite_ffect();
   }
 }

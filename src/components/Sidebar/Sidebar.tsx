@@ -1,4 +1,5 @@
-import Header from '../Header/Header';
+import Header from './Header';
+import Chat from './Chat';
 import Search from './Search';
 import './styles/sidebar.scss';
 
@@ -7,6 +8,47 @@ const Sidebar = () => {
     <div className='Sidebar'>
       <Header />
       <Search />
+      <div className='Sidebar__chats'>
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+        <Chat />
+      </div>
     </div>
   );
 };

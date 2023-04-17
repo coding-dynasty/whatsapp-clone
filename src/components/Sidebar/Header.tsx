@@ -3,6 +3,7 @@ import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import CommentIcon from '@mui/icons-material/Comment';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import IconButton from '@mui/material/IconButton';
+import './styles/header.scss';
 
 const Header = () => {
   return (

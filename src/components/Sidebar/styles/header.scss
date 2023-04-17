@@ -1,0 +1,23 @@
+$base-color: #212d34;
+$white: #ffffff;
+$black: #000000;
+
+@mixin show_icon_button_ewhite_ffect {
+  color: $white;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: $base-color;
+
+  div {
+    display: flex;
+    justify-content: space-around;
+
+    .MuiButtonBase-root {
+      @include show_icon_button_ewhite_ffect();
+    }
+  }
+}

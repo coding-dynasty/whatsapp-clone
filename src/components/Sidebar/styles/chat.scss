@@ -1,0 +1,56 @@
+$base-color: #212d34;
+$white: #ffffff;
+$black: #000000;
+
+@mixin show_icon_button_ewhite_ffect {
+  color: $white;
+}
+
+.Chat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #111b21;
+  color: #fff;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #212d34;
+  }
+
+  .MuiAvatar-root {
+    margin-right: 0.5rem;
+  }
+
+  .Chat__info {
+    margin-right: 0.5rem;
+
+    h1 {
+      font-size: large;
+      margin-bottom: 0.2rem;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .Chat__details {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: small;
+    }
+
+    .MuiSvgIcon-root {
+      align-self: flex-end;
+    }
+  }
+}
+
+.active {
+  background-color: #2b3a43;
+}
