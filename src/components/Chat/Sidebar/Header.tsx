@@ -4,12 +4,16 @@ import CommentIcon from '@mui/icons-material/Comment';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import IconButton from '@mui/material/IconButton';
 import './styles/header.scss';
+import { useAppSelector } from '../../../store/hooks';
+import { selectUser } from '../../../store/userSlice';
 
 const Header = () => {
+  const user = useAppSelector(selectUser);
+
   return (
     <div className='Header'>
       <IconButton>
-        <Avatar src='http://unsplash.it/400/400' />
+        <Avatar src={user?.photoURL} />
       </IconButton>
       <div>
         <IconButton>

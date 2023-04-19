@@ -2,15 +2,18 @@ import { Avatar } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import moment from 'moment';
 import './styles/chat.scss';
+import { useAppSelector } from '../../../store/hooks';
+import { selectUser } from '../../../store/userSlice';
 
 const Chat = () => {
   const elapsedTime = moment().startOf('hour').fromNow();
+  const user = useAppSelector(selectUser);
 
   return (
     <div className='Chat'>
-      <Avatar src='http://unsplash.it/400/400' />
+      <Avatar src={user?.photoURL} />
       <div className='Chat__info'>
-        <h1>Ali Eljerrari</h1>
+        <h1>{user.displayName}</h1>
         <p>this is my message...</p>
       </div>
       <div className='Chat__details'>
