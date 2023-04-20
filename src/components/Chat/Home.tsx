@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Main from './Main/Main';
 import Sidebar from './Sidebar/Sidebar';
 
